@@ -8,14 +8,26 @@ function ViewResult() {
 
 
 
-    //Question no. 2
+
+/////////////////////////////////////////////////////////////////////////////     Question 1
+
+//Node js has been installed , Visual code has been installed
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////     Question 2
 
     p_name = "Sohaib Aslam"
     document.getElementById("q_2").innerHTML = 
     `<span style='background-color:yellow;'>Q2 = Personal Message:</span> Hello, ${p_name} would you like to learn web 3.0 program by ZIA Khan & Team ?<hr>`;
     
     
-    //Question no. 3
+
+
+
+/////////////////////////////////////////////////////////////////////////////     Question 3
+
 
     P_name_UPPER = p_name.toUpperCase()
     P_name_LOWER = p_name.toLowerCase()
@@ -34,14 +46,20 @@ function ViewResult() {
      (${P_name_LOWER}), (${titleCase("my name is sohaib")}) <hr>`;
     
     
-     //Question no. 4
+
+
+
+/////////////////////////////////////////////////////////////////////////////     Question 4
 
 
     document.getElementById("q_4").innerHTML = `<span style='background-color:yellow;'>Q4 = Simple quote:</span>
     Zia Khan & Team once said, "You can buy freedom" <hr>`;
 
 
-    //Question no. 5
+
+
+
+/////////////////////////////////////////////////////////////////////////////     Question 5
 
     famous_person = "Zia Khan & Team"
     message = "You can buy freedom"
@@ -49,7 +67,10 @@ function ViewResult() {
     ${famous_person} once said "${message}" <hr>`;
     
     
-    //Question no. 6
+
+
+
+/////////////////////////////////////////////////////////////////////////////     Question 6
 
     striped_name = "\tSOHAIB\n"
     name_after_striped = striped_name.trim()
@@ -57,7 +78,10 @@ function ViewResult() {
     "${name_after_striped}" <hr>`;
 
 
-    //Question no. 7 and 8
+
+
+
+/////////////////////////////////////////////////////////////////////////////     Question 7 and 8
 
     a = 5, b = 3, c = 12, d = 4, e = 4, f = 2, g = 32, h = 4
     document.getElementById("q_7_8").innerHTML = `<span style='background-color:yellow;'>
@@ -65,14 +89,20 @@ function ViewResult() {
     <u>(Note: Variable used to do oprations)</u> <hr>`;
    
    
-    //Question no. 9
+
+
+
+/////////////////////////////////////////////////////////////////////////////     Question 9
 
     favourite_number = 8
     document.getElementById("q_9").innerHTML = `<span style='background-color:yellow;'>Q9 Favourite Number is:</span>\n "${favourite_number}"
     \n (Stored in variable) <hr>`;
 
 
-    //Question no. 10
+
+
+
+/////////////////////////////////////////////////////////////////////////////     Question 10
 
     let my_Name = "M Name is SOHAIB ASLAM";
     var today = new Date();
@@ -89,14 +119,21 @@ function ViewResult() {
 
 
 
-   //Question no. 11
+
+
+/////////////////////////////////////////////////////////////////////////////     Question 11
+
 
     Friends_List = ["Sohaib Aslam", "Asad Saeed", "Kamil"]
     document.getElementById("q_11").innerHTML = `<span style='background-color:yellow;'>Q11 = Friends List:</span>\n 1=(${Friends_List[0]}),
     \n 2=(${Friends_List[1]}) \n 3=(${Friends_List[2]}) \n <u>(Note: each name accessed using index from list)</u> <hr>`;
    
    
-    //Question no. 12
+
+
+
+/////////////////////////////////////////////////////////////////////////////     Question 12
+
 
     greeting_message = "you are selected for PIAIC web 3.0 course"
     document.getElementById("q_12").innerHTML = `<span style='background-color:yellow;'>Q12 = Greeting Message to each :<br></span>
@@ -105,7 +142,10 @@ function ViewResult() {
     <br>Greetings! ${Friends_List[2]}   ${greeting_message} <hr>`;
 
 
-    //Question no. 13
+
+
+/////////////////////////////////////////////////////////////////////////////     Question 13
+
 
     transport_mode = ["I like Audi A3", "Audi A3 has a small structure", "Audi A3 suit's young guys"]
     let transport_st = "";
@@ -115,7 +155,10 @@ function ViewResult() {
     document.getElementById("q_13").innerHTML = `<span style='background-color:yellow;'>Q13 = Transport Mode :<br></span>${transport_st} <hr>`;
 
 
-    //Question no. 14
+
+
+
+/////////////////////////////////////////////////////////////////////////////     Question 14
 
     
 
@@ -127,7 +170,10 @@ function ViewResult() {
     document.getElementById("q_14").innerHTML = `<span style='background-color:yellow;'>Q14 = Dinner Invitation :<br></span>${dinner_invt}`;
 
 
-    //Question no. 15 Ali out from dinner
+
+
+
+/////////////////////////////////////////////////////////////////////////////     Question 15
 
     One_Guy_Out = Dinner_Guys.slice(0,2)
     One_Guy_Out.splice(2,3, "Zeeshan Hanif")
@@ -139,7 +185,11 @@ function ViewResult() {
     <br> (Note: Ali Razq can't make it he has an emergency) <hr>`;
    
 
-    // Question no. 16 Zeeshan hanif added to dinner
+
+
+
+/////////////////////////////////////////////////////////////////////////////     Question 16
+
     Big_Table = One_Guy_Out.slice(0,3)
     Big_Table.splice(2,3, "Sohaib", "Zeeshan Hanif")
     Big_Table.splice(0,1, "Asad", "Zia Khan")
@@ -153,7 +203,11 @@ function ViewResult() {
 
 
     
-    // Question no. 17
+
+
+
+/////////////////////////////////////////////////////////////////////////////     Question 17
+
 
     Bigger_Cancel = Big_Table.slice(0, 2)
     let two_left = "";
@@ -170,7 +224,10 @@ function ViewResult() {
     document.getElementById("q_17_1").innerHTML = `<span style='background-color:yellow;'>${sorry_others}</span>
     <br> (Note: My apologies we 2 person can only meet due to some restrictions) <hr>`; 
 
-    // Question no. 18
+
+
+
+/////////////////////////////////////////////////////////////////////////////     Question 18
 
 
     Five_Places = [ "Pakistan", "Austrailia", "Canada", "UK", "Saudi Arabia"];
@@ -195,13 +252,19 @@ function ViewResult() {
     document.getElementById("q_18_3").innerHTML = `${Reverse_Places} (Sort reversed List alphabetically) <hr>`;
 
 
-    //Question no. 19
+
+
+
+/////////////////////////////////////////////////////////////////////////////     Question 20
+
     Big_Table
     document.getElementById("q_19").innerHTML = `<span style='background-color:yellow;'>Q19 = Our Dinner Guest :<br></span>1 = ${Big_Table[0]} <br> 2 = ${Big_Table[1]} <br>
     (Note: We have 2 guest for dinner ) <hr>`;
 
 
-    //Question no. 20
+
+
+/////////////////////////////////////////////////////////////////////////////     Question 21
     let cities =[];
 
 
@@ -214,7 +277,10 @@ function ViewResult() {
         console.log(cities);
 
 
-    //Question no. 21
+
+
+
+/////////////////////////////////////////////////////////////////////////////     Question 22
 
 
             
@@ -228,7 +294,10 @@ function ViewResult() {
         console.log(employee);
 
 
-    //Question no. 22,
+
+
+
+/////////////////////////////////////////////////////////////////////////////     Question 22
     
     let guests=['SOHAIB','ASLAM','ASAD','SAEED'];
 
@@ -240,7 +309,11 @@ function ViewResult() {
         }
     
     
-    //Question  no.23, 
+
+
+
+/////////////////////////////////////////////////////////////////////////////     Question 23
+
         let AfridiNumber = 10;
         let Score="50";
         
@@ -257,7 +330,10 @@ function ViewResult() {
         console.log(Score == AfridiNumber);
 
 
-    //Question no.24
+
+
+
+/////////////////////////////////////////////////////////////////////////////     Question 24
 
     let todayy="sat"
     let todayDate=1;
@@ -286,7 +362,10 @@ function ViewResult() {
     console.log(fruitss.includes("grapes"));
 
 
-    //Question no. 25
+
+
+
+/////////////////////////////////////////////////////////////////////////////     Question 25
 
     alien_color = "Green";
     if (alien_color == 'Green') {
@@ -303,7 +382,10 @@ function ViewResult() {
 
   
 
-    //Question no. 26
+
+
+
+/////////////////////////////////////////////////////////////////////////////     Question 26
 
     alien_color = "Brown";
     if (alien_color == 'Green') {
@@ -336,7 +418,9 @@ function ViewResult() {
 
 
 
-    //Question no. 27
+
+
+/////////////////////////////////////////////////////////////////////////////     Question 27
 
     alien_color = "Red";
     if (alien_color == 'yellow'){
@@ -359,7 +443,11 @@ function ViewResult() {
     }
 
 
-    //Question no. 28
+
+
+/////////////////////////////////////////////////////////////////////////////     Question 28
+
+
     Age = "13";
 
     if (Age == '2'){
@@ -393,29 +481,13 @@ function ViewResult() {
     }
     
 
-    //Question no. 29
-    fruits = ["Mangoe", "Apple", "Cheeku"];
-    if ( fruits[0] == "Grapes" ){
-        document.getElementById("q_29").innerHTML = `<span style='background-color:yellow;'>Q29 = Fruit Finder :</span><br>[${fruits}]
-        <br> oh! you like Grapes<hr>`
-    }
 
-    else if ( fruits[1] = "Mangoe" ){
-        document.getElementById("q_29").innerHTML = `<span style='background-color:yellow;'>Q29 = Fruit Finder :</span><br>[${fruits}]
-        <br> oh! you like Mangoe<hr>`
-    }
 
-    else if (fruits[2] = "cheeku" ){
-        document.getElementById("q_29").innerHTML = `<span style='background-color:yellow;'>Q29 = Fruit Finder :</span><br>[${fruits}]
-        <br> oh! you like Cheeku<hr>`
-    }
 
-    else {
-        document.getElementById("q_29").innerHTML = `<span style='background-color:yellow;'>Q29 = Fruit Finder :</span><br>[${fruits}]
-        <br> Fruit not found<hr>`
-    }
 
-    // Question no. 29 right one by Usman COO
+/////////////////////////////////////////////////////////////////////////////     Question 29
+
+
 
             let favorite_fruits = ["Apple", "banana","pear"];
 
@@ -439,7 +511,10 @@ function ViewResult() {
             console.log(`You really like ${favorite_fruits[0]}`);
         }
 
-    //Question 30
+
+
+
+/////////////////////////////////////////////////////////////////////////////     Question 30
 
 
         
@@ -455,45 +530,11 @@ function ViewResult() {
     }
 
 
-    // var account_user = ['admin', 'sohaib', 'user'];
-    // let user_login = "";
-
-    
-    // for (let i = 0; i < account_user.length; i++) {
-    
-    //     user_login += "Good day! " + account_user[i] + " welcome back to system<br>";
-    // }
 
 
-    // if (user_login != ''){
-    //     document.getElementById("q_30").innerHTML = `<span style='background-color:yellow;'>Q30, 31, 32 = User Login System :</span>
-    //     <br>${user_login}<br> (Note: user availaable in array)<hr>`
-    // }
-    // else{
-    //     document.getElementById("q_30").innerHTML = `<span style='background-color:yellow;'>Q30 = No user availabale :</span>
-    //     <br> Please! Add user to array <hr>`
-    // }
 
-    // var account_user = [];
-    // let my_users = "";
+/////////////////////////////////////////////////////////////////////////////     Question 31
 
-    
-    // for (let i = 0; i < account_user.length; i++) {
-    
-    //     my_users += "Good day! " + account_user[i] + " welcome back to system<br>";
-    // }
-
-
-    // if (my_users != ''){
-    //     document.getElementById("q_30_1").innerHTML = `<br>${my_users}<br> (Note: user availaable in array)`
-    // }
-    // else{
-    //     document.getElementById("q_30_1").innerHTML = `<span style='background-color:yellow;'>While no user availabale :</span>
-    //     <br> Please! Add user to array <hr>`
-    // }
-
-
-    //Question no. 31
     let userss=[];
 
         if(userss.length >0){
@@ -511,7 +552,12 @@ function ViewResult() {
         }
 
 
-    // Question 32
+
+
+
+/////////////////////////////////////////////////////////////////////////////     Question 32
+
+
 
         let  current_users=["alex","Luke","Bob","tony","Admin","Mike"];
 
@@ -533,7 +579,11 @@ function ViewResult() {
     }
 
 
-    //Question 33
+
+
+
+/////////////////////////////////////////////////////////////////////////////     Question 33
+
 
     //right one by Usman coo
     let number = [1,2,3,4,5,6,7,8,9];
@@ -555,28 +605,12 @@ function ViewResult() {
     }
 
 
-    // var ordinal_numbers = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
-    // var ordinal_mean = ['1st', '2nd', '3rd', '4th', '5th', '6th', '7th', '8th', '9th']
-    // let ordinal_nums = "";
-    // let ordinal_meaning = "";
 
-    
-    // for (let i = 0; i < ordinal_numbers.length; i++)
 
-    //         ordinal_nums += ordinal_numbers[i] + "<br>";
-     
-        
-    // for (let i = 0; i < ordinal_mean.length; i++)
 
-    // ordinal_meaning += ordinal_mean[i] + "<br>";
 
-    
-    //     document.getElementById("q_31").innerHTML = `<span style='background-color:yellow;'>Q33 = Ordinal Numbers :</span><br>
-    //     ${ordinal_nums}:  ${ordinal_meaning}<br><hr>`
- 
- 
+/////////////////////////////////////////////////////////////////////////////     Question 34
 
-    //Question 34
 
     let pizzas =["Veggie Pizza", "Pepperoni Pizza","BBQ Chicken Pizza"];
 
@@ -618,7 +652,12 @@ function ViewResult() {
     ${fvrt_pizza} : ${pizza_liner}<hr>`
 
 
-    //Question 35 
+
+
+
+/////////////////////////////////////////////////////////////////////////////     Question 35
+
+
     var animals = ["Cat", "Dog", "Tiger"];
     let anima = "";
 
@@ -654,7 +693,10 @@ function ViewResult() {
 
 
 
-    //Question 36
+
+
+
+/////////////////////////////////////////////////////////////////////////////     Question 36
 
 
     
@@ -686,7 +728,10 @@ function ViewResult() {
 
 
          
-      //Question 37
+
+
+
+/////////////////////////////////////////////////////////////////////////////     Question 37
 
 
       
@@ -723,7 +768,10 @@ function ViewResult() {
 
 
 
-      //Question 38
+
+
+
+/////////////////////////////////////////////////////////////////////////////     Question 38
 
 
       function describe_city(city, country="Pakistan"){
@@ -747,7 +795,10 @@ function ViewResult() {
       ${CityCountry("Lahore", "Pakistan")}<hr>`
 
 
-    //Question 39
+
+
+
+/////////////////////////////////////////////////////////////////////////////     Question 39
 
     function city_country(city,country){
 
@@ -762,10 +813,39 @@ function ViewResult() {
     
 
       
-      //Question 40
+
+/////////////////////////////////////////////////////////////////////////////     Question 40
 
 
-     //Right one by Usman COO 
+
+
+    //Practise makes a man perfect    
+    function findSohaib(name, cell, age){
+        let sb = {
+            name:{name},
+            cell:{cell},
+        }
+
+        if (age != 'undefined'){
+            sb.age = {age}
+        }
+        return sb;
+    
+    }
+
+
+    firstObject = findSohaib("SOHIAB", "03444276747", 27)
+    console.log(firstObject)
+
+    secondObject = findSohaib("ASLAM", "03004276747", 28)
+    console.log(secondObject)
+
+    thirdObject = findSohaib("ASAD", "03334276747")
+    console.log(thirdObject)
+
+
+
+     //Practice function
     function make_album(artistName, albumTitle, trackNumbers){
 
         let obj={
@@ -782,7 +862,6 @@ function ViewResult() {
 
     }
 
-
         var firstObj =make_album("Atif","Dori");
         console.log(firstObj);
 
@@ -793,25 +872,30 @@ function ViewResult() {
         console.log(thirdObj);
 
 
-//Mine one need to reset or delete
-      albumObject = "";
-      function album(artist, title) {
-        return albumObject = artist +","+ title;
-      }
-
-
-      
-    
-
-      document.getElementById("q_37").innerHTML = `<span style='background-color:yellow;'>Q40 = Album Object Function :</span><br>
-      ${album("NFA", "Jana Unka")}<hr>`
 
 
 
 
-    //Question 41
 
-      //More efficient by Usman coo
+
+
+/////////////////////////////////////////////////////////////////////////////     Question 41
+
+
+    //SOHAIB's Function
+
+        var magNames = ['Gotti', 'Aiena', 'Jackson']   //Declare a list of magicianNames
+
+        function revealMagician(magics){
+            for (i=0; i<magics.length; i++){
+                console.log(magics[i])
+            }
+        }
+
+        revealMagician(magNames); // calling function with declared list
+
+
+      //Practice Function
         var magiciansNames = [ 'alex', 'BOB', 'DUde' ]; 
 
 
@@ -829,17 +913,13 @@ function ViewResult() {
             }
 
 
-    
-    //non efficient
-    Mag_names = ["Zia Khan", "Daniyal Nagori", "Ali Razzaq"]
-    document.getElementById("q_38").innerHTML = `<span style='background-color:yellow;'>Q42 = The Magecian Name Function :</span><br>
-    ${album(Mag_names)}<hr>`
 
 
 
-    //Question 42
 
-    //console wala 
+/////////////////////////////////////////////////////////////////////////////     Question 42
+
+    //console Result 
     var magiciansNames = [ 'alex', 'BOB', 'DUde' ]; 
 
         function make_great(magicians){
@@ -861,69 +941,63 @@ function ViewResult() {
 
         show_magicians(magiciansNames);
 
-    albumObject = "";
-    function album(great, names) {
-        return greaties =  great + names;
-    }
 
+        //Practice Function with different labels   
+        var magicianList = ['Gotti', 'Aiena', 'Jakson'];
 
-    //Not right just for html page    
-    Mag_names = ["Zia Khan", "Daniyal Nagori", "Ali Razzaq"]
-    The_great = "The Great "
-    document.getElementById("q_38").innerHTML = `<span style='background-color:yellow;'>Q43 = The Magecian Great Addition Function :</span><br>
-    ${album(The_great + Mag_names)}<hr>`
+            function greatMagicians(magics){
 
-
-
-
-              //Question 43
-
-    //Need to understand this
-              var magiciansNames = [ 'alex', 'BOB', 'DUde' ]; 
-
-                function make_great(magicians){
-
-                let greatMagicians =[];
-                for (i=0; i<magicians.length; i++) {
-                    greatMagicians.push(`Great ${magicians[i]}`);
-                }
-                return greatMagicians;
+                let greatMagician = [];    
+                    for (i=0; i<magics.length; i++){
+                        greatMagician.push(`Great ${magics[i]}`);
+                    }
+                    return greatMagician;
                 }
 
-                let greatMagicians = make_great(magiciansNames);
+            magicianNames = greatMagicians(magicianList);
+            console.log(magicianNames); // show magician names with word (Great) after calling name list
 
-                function show_magicians(magicians, greatMag) {
-                for (i=0; i<magicians.length; i++) {
-                    console.log(`${magicians[i]},  ${greatMag[i]}`);
+
+
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////     Question 43
+
+    
+
+        //Practice makes me perfect to understand the syntax
+        topMegecians = ['Anny', 'Hina', 'Loby']
+
+            function greatOne(magics){
+            let greatWalayMegicians = []
+                for (i=0; i<magics.length; i++){
+                    greatWalayMegicians.push(`Great ${magics[i]}`);
                 }
+
+            return greatWalayMegicians;
+            }
+
+            let greatWalayMegicians = greatOne(topMegecians);
+
+            function revealMegician(magics, greatMagecians){
+                for (i=0; i<magics.length; i++){
+                    console.log(`${magics[i]}, ${greatMagecians[i]}`);
                 }
+            }
 
-                show_magicians(magiciansNames, greatMagicians);
-
-
-
-                //just for html page not efficient code
-              const shisandwichrt = {
-                fullName: function(name) {
-                  return   "Customer: " +name +"<br>"+"Sandvich Type: "+ this.sandvich_Type + "<br> Souce" + this.souce_Quantity+ "<br> Bread" + this.breadType+ "<br> Chicken" + this.chicken+ "<br> Salad" + this.Salad; 
-                }
-              }
-              
-              const shisandwichrt1 = {
-                sandvich_Type:"Subway",
-                souce_Quantity: "Normal",
-                breadType: "Seasmi",
-                chicken: "Tikka",
-                Salad: "Full",
-              }
-              
-            
-        
-              document.getElementById("q_39").innerHTML = `<span style='background-color:yellow;'>Q44 , 45 = T-Shirt full size Demand Function :</span><br>
-              ${shisandwichrt.fullName.call(shisandwichrt1, "SOHAIB ASLAM")}<hr>`
+            revealMegician(topMegecians, greatWalayMegicians)
 
 
-//Question no. 44
+
+
+             
+
+
+/////////////////////////////////////////////////////////////////////////////     Question 44
 
 
     function Sandwitch(...items){
@@ -939,7 +1013,7 @@ function ViewResult() {
 
 
 
-    // Question 45
+/////////////////////////////////////////////////////////////////////////////     Question 45
 
     
         function carInfo(manufacturer , model, feature){
@@ -965,6 +1039,6 @@ function ViewResult() {
 
 
 
-        // Completed, code chunks has been added from Usman ashraf code
+        // Completed, Remove code chunks, were added by Other team lead repos. Now practice has been done 
 
 }
