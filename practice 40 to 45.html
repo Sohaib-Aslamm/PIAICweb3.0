@@ -24,33 +24,24 @@
 
 
 <script>
+var magicians = ['mag 1st name', 'mag 2nd name', 'mag 3rd name']
+var new_magicians = []
 
-
-
-
-    
-function carInfo(manufacturer , model, feature){
-
-let car ={
-    manufacturer:{manufacturer},
-    model:{model},
-    feature:{feature}
-};
-
-return car;
+function make_great(mag_arr){
+    for(var i=0; i<mag_arr.length; i++){
+        new_magicians[i] = `Great ${mag_arr[i]}`
+    }
 }
 
+function show_magicians(mag_arr){
+    for(var i=0; i<mag_arr.length; i++){
+        console.log(mag_arr[i])
+    }
+}
 
-var firstCall = carInfo("Honda","2022",'white');
-console.log(firstCall);
-
-var secCall = carInfo("Toyota","2020",'Black');
-console.log(secCall);
-
-var thirdCall = carInfo("Suzuki","2020");
-console.log(thirdCall);
-
-
+make_great(magicians);
+show_magicians(new_magicians);
+show_magicians(magicians);
 </script>
 
 </html>

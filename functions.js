@@ -335,31 +335,23 @@ function ViewResult() {
 
 /////////////////////////////////////////////////////////////////////////////     Question 24
 
-    let todayy="sat"
-    let todayDate=1;
-    let color = "White";
-    const fruitss = ["Banana", "Orange", "Apple", "Mango"];
+        var favorite_fruits = ['mango', 'banana', 'orange']
 
-
-    console.log(todayDate ===1);
-    console.log(todayDate ==='1');
-
-    console.log(todayy === today.toLowerCase());
-
-    console.log(todayy >2);
-
-    console.log(todayy <2);
-    console.log(todayDate =='1');
-
-    console.log(todayy <2|| todayDate =='1');
-    console.log(todayy <2|| todayDate ==='1');
-
-    console.log(todayy=="sat" && todayDate =='1');
-    console.log(todayy =="sat" && todayDate ==='1');
-
-
-    console.log(fruitss.includes("Mango"));
-    console.log(fruitss.includes("grapes"));
+        if(favorite_fruits.includes('mango')){
+            console.log("You really like mango!")
+        }
+        if(favorite_fruits.includes('banana')){
+            console.log("You really like banana!")
+        }
+        if(favorite_fruits.includes('orange')){
+            console.log("You really like orange!")
+        }
+        if(favorite_fruits.includes('apple')){
+            console.log("You really like apple!")
+        }
+        if(favorite_fruits.includes('pineapple')){
+            console.log("You really like pineapple!")
+        }
 
 
 
@@ -552,6 +544,19 @@ function ViewResult() {
         }
 
 
+        //Another one for practice 
+        let user_names = ['admin', 'Rana', 'Muhammad', 'Reebaal', 'Hussain'];
+        for (let i = 0; i < user_names.length; i++){
+        if (user_names[i] == 'admin'){
+            console.log('Welcome Mr admin! you have some important notification wanna check')
+        } 
+        if (user_names[i] == 'admin'){
+            continue;
+        } else{
+            console.log(`Hello!! ${user_names[i]} Thankyou for logging in to our website... `)   
+        }
+
+
 
 
 
@@ -577,6 +582,25 @@ function ViewResult() {
             console.log(`${new_users[i]}the username is available.`)
         }
     }
+
+
+    //Another one for practice 
+
+            
+        let user_names = ['admin', 'Rana', 'Muhammad', 'Reebaal', 'Hussain'];
+        if (user_names[0] == undefined){
+            console.log("We need to find some users...")
+        }
+        for (let i = 0; i < user_names.length; i++){
+            if (user_names[i] == 'admin'){
+                console.log('Welcome Mr admin! you have some important notification wanna check')
+            } 
+            if (user_names[i] == 'admin'){
+                continue;
+            } else{
+                console.log(`Hello! ${user_names[i]} Thankyou for logging in to our website... `)   
+            }
+        };
 
 
 
@@ -871,8 +895,28 @@ function ViewResult() {
         var thirdObj =make_album("Mustafa Zahid","Chano",2);
         console.log(thirdObj);
 
-
-
+    // Another practice function 
+    function make_album(artist_name, album_title, no_of_tracks = '') {
+        if (no_of_tracks) {
+            let dict = {
+                'artist': artist_name,
+                'album': album_title,
+                'tracks': no_of_tracks
+            }
+            return dict
+        } else {
+            let dict = {
+                'artist': artist_name,
+                'album': album_title
+            }
+            return dict
+        }
+    }
+        console.log(make_album('Jungkook', 'Broken Angel'))
+        console.log(make_album('Jimin', 'Feel the magic in the air'))
+        console.log(make_album('Suga', 'Beautiful Eye'))
+        console.log(make_album('taehyung', 'Dark night', '7'))
+        console.log(make_album('hobby', 'Red blood', '5'))
 
 
 
@@ -1036,6 +1080,28 @@ function ViewResult() {
 
         var thirdCall = carInfo("Suzuki","2020");
         console.log(thirdCall);
+
+
+        // another one for practice 
+        
+            function car(manufacturer, model, ...arguments){
+                if (arguments) {
+                    let dict = {
+                        'Manufacturer': manufacturer,
+                        'Model': model,
+                        'Additional_feautures': arguments
+                    };
+                    return dict
+                }else {
+                    let dict = {
+                        'Manufacturer': manufacturer,
+                        'Model': model
+                    };
+                    return dict
+                };
+            };
+
+            console.log(car('ROLLS-ROYCE', '2022', 'Metallic-blue', 'Driver Airbag', 'Automatic Climate Control'))
 
 
 
